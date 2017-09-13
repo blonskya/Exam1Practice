@@ -249,7 +249,7 @@ def problem3b(m, point1):
     window=rg.RoseWindow(400,650)
     hldld = 0
     for k in range (m):
-        point=rg.Point(point1.x,point1.y+60*k)
+        point = rg.Point(point1.x,point1.y+60*k)
         hldld += problem3a(window, point, 3+2*k)
     window.close_on_mouse_click()
     return hldld
